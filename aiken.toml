@@ -1,0 +1,16 @@
+name = "duong/smart-contract"
+version = "0.0.0"
+compiler = "v1.0.29-alpha"
+plutus = "v2"
+license = "Apache-2.0"
+description = "Aiken contracts for project 'duong/smart-contract'"
+
+[repository]
+user = "duong"
+project = "smart-contract"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "1.9.0"
+source = "github"

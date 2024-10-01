@@ -1,0 +1,47 @@
+{
+  "preamble": {
+    "title": "duong/smart-contract",
+    "description": "Aiken contracts for project 'duong/smart-contract'",
+    "version": "0.0.0",
+    "plutusVersion": "v2",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.0.29-alpha+16fb02e"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "minting.mint_policy",
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/minting~1Redeemer"
+        }
+      },
+      "compiledCode": "5888010000323232323232232322533300532325333007300500213005375a600260126ea801854ccc01ccdc3a4004004266e1cdd6980098049baa006480085281180580098031baa3009300a3007375400229309b2b2999801980098021baa002132325333008300a002149858dd6980400098029baa00216370e90002b9a5573aaae7955cfaba15745",
+      "hash": "6b2d367fdc80561848104aa97deb5729ce124ff206f3f29116148c73"
+    }
+  ],
+  "definitions": {
+    "Int": {
+      "dataType": "integer"
+    },
+    "minting/Redeemer": {
+      "title": "Redeemer",
+      "anyOf": [
+        {
+          "title": "Redeemer",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "msg",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
